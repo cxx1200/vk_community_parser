@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>广告投放日报</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <h1>📊 广告投放日报</h1>
+        <div class="date-picker">
+          <label for="reportDate">日期</label>
+          <input type="date" id="reportDate">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- 核心指标 -->
+    <section class="section" aria-label="核心指标">
+      <div class="section-title">
+        <h2>核心指标</h2>
+        <span class="section-sub">今日数据概览</span>
+      </div>
+      <div class="kpi-grid" id="kpiGrid">
+        <!-- JS 渲染 -->
+      </div>
+    </section>
+
+    <!-- 渠道数据表 -->
+    <section class="section" aria-label="渠道数据">
+      <div class="section-title">
+        <h2>渠道数据</h2>
+        <span class="section-sub">分渠道投放表现</span>
+      </div>
+      <div class="table-wrapper">
+        <table class="data-table" id="channelTable">
+          <thead>
+            <tr>
+              <th>渠道</th>
+              <th>花费 (¥)</th>
+              <th>展示数</th>
+              <th>点击量</th>
+              <th>转化数</th>
+              <th>点击率</th>
+              <th>转化成本 (¥)</th>
+              <th>ROI</th>
+            </tr>
+          </thead>
+          <tbody id="channelBody">
+            <!-- JS 渲染 -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 优化建议 -->
+    <section class="section" aria-label="优化建议">
+      <div class="section-title">
+        <h2>优化建议</h2>
+        <span class="section-sub">基于数据的 actionable 洞察</span>
+      </div>
+      <div class="tips-list" id="tipsList">
+        <!-- JS 渲染 -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>数据更新时间：<span id="updateTime"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
